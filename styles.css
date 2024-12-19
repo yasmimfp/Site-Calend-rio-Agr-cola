@@ -1,0 +1,135 @@
+/* Fontes personalizadas */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+/* Barra de navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #01204e;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .arvorezinha {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    left: 20px;
+    margin-top: -10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul li a:hover {
+    color: #006b0e;
+    transform: scale(1.05);
+}
+
+/* Estilos para o cabeçalho */
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    color: #000000;
+    font-family: 'Hartwell Black', sans-serif;
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+}
+
+
+
+
+/* Estilos para o conteúdo */
+main {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os balões */
+}
+
+.balao {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 40px 0;
+    padding: 50px; /* Aumentado o padding para aumentar o comprimento */
+    position: relative;
+    max-width: 1500px; /* Aumentado o tamanho máximo do balão */
+    width: 90%; /* Aumentado o tamanho da largura */
+    font-family: 'Open Sans',sans-serif
+}
+
+
+.balao img {
+    max-width: 500px; /* Aumentado o tamanho da imagem */
+    border-radius: 15px; /* Aumentado o arredondamento da imagem */
+    margin-right: 40px; /* Aumentado o espaçamento entre a imagem e o texto */
+}
+
+
+
+.balao p {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.balao:hover {
+    transform: translateY(-10px);
+    transition: transform 0.6s  ease;
+}
+
+.calendarios {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Garante que, em telas menores, os balões vão para a linha seguinte */
+    gap: 20px; /* Espaçamento entre os balões */
+}
+
+.balaoc {
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.15); /* Efeito de relevo */
+    padding: 30px;
+    width: 600px;
+    text-align: center;
+    flex: 1;
+    font-family: 'Open Sans',sans-serif
+}
+body {
+    background-image: url('imagens/imgfundo.jpg');
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-attachment: fixed; /* Mantém a imagem fixa quando o usuário rolar a página */
+}
